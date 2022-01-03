@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Demo</title>
+    
+    
+    
+</head>
+<body>
+    <h1 id="h1Tag">test demo</h1>
+
+    <input type="text" id="user" placeholder="username"/>
+    <input type="text" id="pass" placeholder="password"/>
+
+    <button onclick="login()" >Submit </button>
+
+    <script>
+
+        function login(){
+
+                let username = document.getElementById("user").value;
+                let pass = document.getElementById("pass").value;
+
+                let heading = document.getElementById("h1Tag");
+
+                console.log(heading);
+
+                if(username == "pankaj" && pass == "pankaj@123"){
+                    heading.textContent = "login Sucessfull";
+                }else{
+                    heading.textContent = "Incorrect Username or password";
+                    alert("Incorrect Username or password")
+                }
+
+                
+
+            }
+
+    </script>
+
+</body>
+
+
+</html>
